@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>bofhwits feed</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>#bofh blotter thing
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Requestor</th>
+          <th>Time</th>
+          <th>Username</th>
+          <th>Post</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{range $idx, $post := .}}
+        <tr>
+          <td>{{.Requestor}}</td>
+          <td>{{.Time}}</td>
+          <td>{{.Username}}</td>
+          <td>{{.Post}}</td>
+        </tr>
+        {{end}}
+      </tbody>
+    </div>
+  </div>
+</body>
+</html>
