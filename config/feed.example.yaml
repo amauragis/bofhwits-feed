@@ -1,0 +1,6 @@
+---
+mysql:
+    host: "127.0.0.1"
+    db: "bofhwits_db"
+    user: "bofhwits_user"
+    pass: "AGreatPassword"
